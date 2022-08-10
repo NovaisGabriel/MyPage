@@ -1,4 +1,91 @@
 html, body {
-  height: 100%;
+  margin: 0;
+  height:100%;
+  width:100%;
+  padding:0;
+}
+
+img {
+  width: 70%;
+  border-radius: 20%;
+}
+
+section {
+  display: block;
+  background: steelblue;
+  height:100%;
+  width:100%;
+  padding: 60px;
+  padding-left: 120px;
+  box-sizing:border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navigation{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:whitesmoke;
+}
+li.navigation-item {
+    float: right;
+    display: inline;
+  }
+
+li.navigation-name {
+    float: left;
+    display: inline;
+  }
+
+li.navigation-item a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.navigation-name a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+li.navigation-item a:hover {
+  background-color: white;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  text-align: center;
+}
+
+.column-1 {
+}
+
+.column-2 {
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
   width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }
